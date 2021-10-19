@@ -1,0 +1,16 @@
+﻿@model  List<FileContentResult>
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h2 class="mt-3">Saved Recordings</h2>
+<div class="recordings row" id="recordings">
+    @foreach (byte[] m in Model)
+    {<div>
+     
+</div>
+    }
+
+</div>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+

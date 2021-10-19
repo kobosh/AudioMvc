@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="container">
+    <h1 class="text-center">Record Your Voices</h1>
+    <div class="record-button-container text-center mt-5">
+        <button class="bg-transparent border btn record-button rounded-circle shadow-sm text-center" id="recordButton">
+            <img src="/images/microphone.png" alt="Record" class="img-fluid" />
+        </button>
+    </div>
+</div>
+<div class="recorded-audio-container mt-5 d-none flex-column justify-content-center align-items-center"
+     id="recordedAudioContainer">
+    <div class="actions mt-3">
+        <button class="btn btn-success rounded-pill" id="saveButton">Save</button>
+        <button class="btn btn-danger rounded-pill" id="discardButton">Discard</button>
+    </div>
+
+</div>
+<h2 class="mt-3">Saved Recordings</h2>
+<div class="recordings row" id="recordings"></div>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="~/Scripts/record.js"></script>
